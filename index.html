@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodily - Healthy Smoothie</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Foodily Logo" class="logo-img">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Gallery</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="content-left">
+            <h1 class="main-title">Healthy<br>Smoothie</h1>
+            <p class="subtitle">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                et dolore magnam aliquam quaerat voluptatem.</p>
+            <button class="buy-now-btn">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C12 2 4 10.3 4 15.5C4 19.6421 7.58172 23 12 23C16.4183 23 20 19.6421 20 15.5C20 10.3 12 2 12 2Z"
+                            fill="#e2908f" />
+                    </svg>
+                </span>
+                Buy Now
+            </button>
+        </div>
+
+        <div class="images-container">
+            <!-- Floating Images -->
+            <img src="images/strawberries.png" alt="Strawberries" class="floating-img strawberries">
+            <img src="images/apple_ginger.png" alt="Apple and Ginger" class="floating-img apple-ginger">
+            <img src="images/smoothie_jar.png" alt="Green Smoothie" class="floating-img smoothie-jar">
+            <img src="images/smoothie_jar.png" alt="Green Smoothie Back" class="floating-img smoothie-jar-back">
+            <img src="images/autumn_leaf.png" alt="Autumn Leaf" class="floating-img autumn-leaf">
+        </div>
+
+        <!-- Decorative background shape -->
+        <div class="bg-shape"></div>
+    </main>
+
+    <!-- Bottom Splash Effect -->
+    <div class="bottom-splash">
+        <svg preserveAspectRatio="none" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 120H1440V60C1440 60 1320 0 1080 30C840 60 720 10 480 30C240 50 120 0 0 30V120Z" fill="white"
+                opacity="0.3" />
+            <path d="M0 120H1440V80C1440 80 1340 30 1100 50C860 70 740 30 500 50C260 70 140 30 0 50V120Z" fill="white"
+                opacity="0.6" />
+            <path d="M0 120H1440V100C1440 100 1360 70 1120 80C880 90 760 60 520 80C280 100 160 70 0 80V120Z"
+                fill="white" />
+            <!-- Adding some textured dots/splashes for the watercolor effect -->
+            <circle cx="150" cy="90" r="5" fill="white" />
+            <circle cx="160" cy="110" r="8" fill="white" />
+            <circle cx="300" cy="80" r="4" fill="white" />
+            <circle cx="450" cy="75" r="6" fill="white" />
+            <circle cx="700" cy="95" r="7" fill="white" />
+            <circle cx="850" cy="70" r="5" fill="white" />
+            <circle cx="1100" cy="85" r="6" fill="white" />
+            <circle cx="1300" cy="75" r="8" fill="white" />
+            <!-- Add more splatter effect near the top edges -->
+            <path d="M200 40 Q210 30 220 50" stroke="white" stroke-width="2" fill="none" opacity="0.5" />
+            <path d="M600 50 Q610 20 630 60" stroke="white" stroke-width="3" fill="none" opacity="0.5" />
+            <path d="M1000 60 Q1015 30 1030 70" stroke="white" stroke-width="2" fill="none" opacity="0.5" />
+            <circle cx="210" cy="35" r="2" fill="white" opacity="0.6" />
+            <circle cx="620" cy="30" r="3" fill="white" opacity="0.6" />
+            <circle cx="1015" cy="40" r="2" fill="white" opacity="0.6" />
+        </svg>
+    </div>
+
+    <!-- Fresh Fruit Juices Section -->
+    <section class="juices-section">
+        <div class="juices-left">
+            <img src="images/about-left.webp" alt="Fresh Fruit Juices" class="juices-img">
+        </div>
+        <div class="juices-right">
+            <h3 class="juices-subtitle">Drink For Health</h3>
+            <h2 class="juices-title">Fresh Fruit <span>Juices</span></h2>
+            <div class="separator">
+                <svg width="60" height="15" viewBox="0 0 60 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="5" r="3" fill="#b7b89d" />
+                    <path d="M25 12 Q30 5 35 12" stroke="#b7b89d" stroke-width="2" fill="none" />
+                    <line x1="0" y1="12" x2="22" y2="12" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="38" y1="12" x2="60" y2="12" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+            <p class="juices-text">Us percipit urbanitas referrentur ea. Mei at numquam molestiae intellegam. Ansed
+                dictas accumsan. Nam sint atqui voluptatibus an, pro ne malis semper perpetua. Nam sint atqui
+                voluptatibus an, pro ne malis semper perpetua.</p>
+            <button class="buy-now-btn outline-btn">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C12 2 4 10.3 4 15.5C4 19.6421 7.58172 23 12 23C16.4183 23 20 19.6421 20 15.5C20 10.3 12 2 12 2Z"
+                            fill="#ffffff" />
+                    </svg>
+                </span>
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Sketch overlay on the right -->
+        <div class="sketch-overlay">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- A simple stylized outline of a cup -->
+                <path d="M 20 20 L 80 20 L 70 90 L 30 90 Z" fill="none" stroke="#000" stroke-width="0.5"
+                    stroke-dasharray="2 2" opacity="0.5" />
+                <path d="M 15 20 L 85 20" fill="none" stroke="#000" stroke-width="0.5" opacity="0.5" />
+                <path d="M 45 5 L 55 20" fill="none" stroke="#000" stroke-width="0.5" opacity="0.5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Beverage Section -->
+    <section class="beverage-section">
+        <div class="beverage-header">
+            <h3 class="beverage-subtitle">Best For You</h3>
+            <h2 class="beverage-title">Our Beverage</h2>
+            <div class="separator center-separator">
+                <svg width="60" height="15" viewBox="0 0 60 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="5" r="3" fill="#b7b89d" />
+                    <path d="M25 12 Q30 5 35 12" stroke="#b7b89d" stroke-width="2" fill="none" />
+                    <line x1="0" y1="12" x2="22" y2="12" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="38" y1="12" x2="60" y2="12" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="beverage-grid">
+            <div class="beverage-card">
+                <img src="images/product1.webp" alt="Milkshake">
+                <h4>Milkshake</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card">
+                <img src="images/product2.webp" alt="Frappe">
+                <h4>Frappe</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card highlight-text">
+                <img src="images/product3.webp" alt="Boba Drinks">
+                <h4>Boba Drinks</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card">
+                <img src="images/product4.webp" alt="Mojito">
+                <h4>Mojito</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card">
+                <img src="images/product5.webp" alt="Slushy">
+                <h4>Slushy</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card">
+                <img src="images/product6.webp" alt="Hot Chocolate">
+                <h4>Hot Chocolate</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card highlight-text">
+                <img src="images/product7.webp" alt="smoothie">
+                <h4>smoothie</h4>
+                <p>3 products</p>
+            </div>
+            <div class="beverage-card">
+                <img src="images/product8.webp" alt="coffee">
+                <h4>coffee</h4>
+                <p>3 products</p>
+            </div>
+        </div>
+
+        <div class="beverage-footer">
+            <button class="buy-now-btn outline-btn view-all-btn">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C12 2 4 10.3 4 15.5C4 19.6421 7.58172 23 12 23C16.4183 23 20 19.6421 20 15.5C20 10.3 12 2 12 2Z"
+                            fill="#ffffff" />
+                    </svg>
+                </span>
+                View All Products
+            </button>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <!-- Top Splash facing down with color of previous section #fbfbfb -->
+        <div class="deals-top-splash">
+            <svg preserveAspectRatio="none" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1440V40C1440 40 1320 80 1080 60C840 40 720 70 480 50C240 30 120 80 0 60V0Z"
+                    fill="#fbfbfb" />
+            </svg>
+        </div>
+
+        <div class="deals-content">
+            <div class="deals-circle">
+                <div class="circle-sketch">
+                    <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 10 L80 10 L65 70 L35 70 Z" stroke="#ffffff" stroke-width="0.5"
+                            stroke-dasharray="2 2" opacity="0.3" />
+                        <path d="M45 70 L45 90 L25 90 L75 90 L55 90 L55 70" stroke="#ffffff" stroke-width="0.5"
+                            opacity="0.3" />
+                    </svg>
+                </div>
+                <h4 class="deals-subtitle">30% Off For Juice</h4>
+                <h2 class="deals-title">Big Deals of the Week</h2>
+                <p class="deals-text">Us percipit urbanitas referrentur ea. Mei at numquam molestiae intellegam. Ansed
+                    dictas accumsan.</p>
+                <h5 class="deals-prompt">To Get New Of Our Deals</h5>
+                <form class="deals-form">
+                    <input type="email" placeholder="type your email" required>
+                    <button type="button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bottom Splash facing up with color of next section #ffffff -->
+        <div class="deals-bottom-splash">
+            <svg preserveAspectRatio="none" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 80H1440V40C1440 40 1320 0 1080 20C840 40 720 10 480 30C240 50 120 0 0 20V80Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Detox Smoothie Recipe Section -->
+    <section class="recipe-section">
+        <!-- Faint background text -->
+        <div class="bg-text">yummy</div>
+
+        <!-- Floating elements -->
+        <i class="fas fa-leaf floating-leaf leaf-1"></i>
+        <i class="fas fa-leaf floating-leaf leaf-2"></i>
+
+        <div class="recipe-header">
+            <h3 class="beverage-subtitle">Best For You</h3>
+            <h2 class="beverage-title">Detox Smoothie Recipe</h2>
+            <div class="separator center-separator">
+                <svg width="60" height="15" viewBox="0 0 60 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="5" r="3" fill="#b7b89d" />
+                    <path d="M25 12 Q30 5 35 12" stroke="#b7b89d" stroke-width="2" fill="none" />
+                    <line x1="0" y1="12" x2="22" y2="12" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="38" y1="12" x2="60" y2="12" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <!-- Concentric circles -->
+            <div class="concentric-circles">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+            </div>
+
+            <!-- Center Bottle -->
+            <div class="recipe-bottle">
+                <!-- Using placeholder image since generation quota was reached -->
+                <img src="https://images.unsplash.com/photo-1622597467836-f38240662c8b?w=400&auto=format&fit=crop"
+                    alt="Detox Smoothie" class="bottle-img">
+            </div>
+
+            <!-- Ingredients -->
+            <div class="ingredient item-left item-1">
+                <div class="ingredient-text">
+                    <h4>Cucumber</h4>
+                    <p>Us percipit urbanitas referrentur ea. Mei at numquam molestiae</p>
+                </div>
+                <div class="ingredient-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+            </div>
+
+            <div class="ingredient item-left item-2">
+                <div class="ingredient-text">
+                    <h4>Apple</h4>
+                    <p>Us percipit urbanitas referrentur ea. Mei at numquam molestiae</p>
+                </div>
+                <div class="ingredient-icon">
+                    <i class="fas fa-apple-whole"></i>
+                </div>
+            </div>
+
+            <div class="ingredient item-right item-3">
+                <div class="ingredient-icon">
+                    <i class="fas fa-lemon"></i>
+                </div>
+                <div class="ingredient-text">
+                    <h4>Lemon</h4>
+                    <p>Us percipit urbanitas referrentur ea. Mei at numquam molestiae</p>
+                </div>
+            </div>
+
+            <div class="ingredient item-right item-4">
+                <div class="ingredient-icon">
+                    <i class="fas fa-droplet"></i>
+                </div>
+                <div class="ingredient-text">
+                    <h4>Fresh Water</h4>
+                    <p>Us percipit urbanitas referrentur ea. Mei at numquam molestiae</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Beverage Section -->
+    <section class="upcoming-section">
+        <div class="upcoming-left">
+            <h2 class="upcoming-title">Upcoming Our<br>Beverage</h2>
+            <div class="separator">
+                <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 18 C33 18 33 5 40 5 C47 5 47 18 40 18 Z" fill="#b7b89d" />
+                    <path d="M40 5 L40 18" stroke="#f7f3e8" stroke-width="1" />
+                    <circle cx="33" cy="14" r="1.5" fill="#b7b89d" />
+                    <circle cx="47" cy="14" r="1.5" fill="#b7b89d" />
+                    <line x1="0" y1="18" x2="28" y2="18" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="52" y1="18" x2="80" y2="18" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+            <p class="upcoming-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <button class="buy-now-btn outline-btn">
+                <span class="btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C12 2 4 10.3 4 15.5C4 19.6421 7.58172 23 12 23C16.4183 23 20 19.6421 20 15.5C20 10.3 12 2 12 2Z"
+                            fill="#ffffff" />
+                    </svg>
+                </span>
+                All Product
+            </button>
+
+            <!-- Floating Elements with CSS Art -->
+            <div class="floating-items">
+                <div class="css-avocado"></div>
+                <div class="css-lime"></div>
+                <div class="css-leaf"></div>
+            </div>
+        </div>
+
+        <div class="upcoming-right">
+            <!-- Filter definition for ragged edge -->
+            <svg width="0" height="0">
+                <filter id="ragged-filter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="25" xChannelSelector="R"
+                        yChannelSelector="G" />
+                </filter>
+            </svg>
+            <div class="ragged-edge"></div>
+            <img src="images/right-1.webp" alt="Upcoming Beverage" class="upcoming-right-img">
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-bg">
+            <img src="https://images.unsplash.com/photo-1542314831-c6a4d14241ac?q=80&w=1000&auto=format&fit=crop"
+                class="testimonial-bg-img" alt="Background pattern">
+        </div>
+        <div class="testimonial-header">
+            <h3 class="beverage-subtitle">Testimonial</h3>
+            <h2 class="beverage-title">What People Say</h2>
+            <div class="separator center-separator">
+                <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Center leaf -->
+                    <path d="M40 2 Q45 8 40 14 Q35 8 40 2 Z" fill="#b7b89d" />
+                    <!-- Left leaf -->
+                    <path d="M33 9 Q30 7 28 10 Q31 12 33 9 Z" fill="#b7b89d" />
+                    <!-- Right leaf -->
+                    <path d="M47 9 Q50 7 52 10 Q49 12 47 9 Z" fill="#b7b89d" />
+                    <!-- Lines -->
+                    <line x1="0" y1="14" x2="22" y2="14" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="58" y1="14" x2="80" y2="14" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <div class="testimonial-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=60"
+                        alt="Meredith Grant" class="testimonial-img">
+                </div>
+                <p class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco."</p>
+                <p class="testimonial-author"><span>Meredith Grant</span> - Host Mother</p>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=60"
+                        alt="John Doe" class="testimonial-img">
+                </div>
+                <p class="testimonial-quote">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia."</p>
+                <p class="testimonial-author"><span>John Doe</span> - Happy Customer</p>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=60"
+                        alt="Jane Smith" class="testimonial-img">
+                </div>
+                <p class="testimonial-quote">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+                <p class="testimonial-author"><span>Jane Smith</span> - Regular Guest</p>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="blog-pattern">
+            <div class="floating-sketches">
+                <i class="fas fa-apple-whole"></i>
+                <i class="fas fa-lemon"></i>
+                <i class="fas fa-leaf"></i>
+                <i class="fas fa-seedling"></i>
+                <i class="fas fa-carrot"></i>
+                <i class="fas fa-apple-whole"></i>
+                <i class="fas fa-lemon"></i>
+                <i class="fas fa-leaf"></i>
+            </div>
+        </div>
+
+        <div class="blog-header">
+            <h3 class="beverage-subtitle">News & Recipe</h3>
+            <h2 class="beverage-title">Our Fruitsome Blog</h2>
+            <div class="separator center-separator">
+                <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 2 Q45 8 40 14 Q35 8 40 2 Z" fill="#b7b89d" />
+                    <path d="M33 9 Q30 7 28 10 Q31 12 33 9 Z" fill="#b7b89d" />
+                    <path d="M47 9 Q50 7 52 10 Q49 12 47 9 Z" fill="#b7b89d" />
+                    <line x1="0" y1="14" x2="22" y2="14" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="58" y1="14" x2="80" y2="14" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+            <p class="blog-description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus
+                magna,<br>vel scelerisque nisl consectetur et.</p>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=600&auto=format&fit=crop"
+                        alt="Papaya Smoothie">
+                    <div class="img-overlay">
+                        <div class="overlay-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">SMOOTHIE</span>
+                    <h4 class="blog-title">Broad bean and goats' cheese bruschetta</h4>
+                    <div class="blog-meta">
+                        <span>May 21, 2021</span>
+                        <span class="dot-separator">•</span>
+                        <span>2 Comments</span>
+                        <span class="dot-separator">•</span>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=600&auto=format&fit=crop"
+                        alt="Green Smoothie">
+                    <div class="img-overlay">
+                        <div class="overlay-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">SMOOTHIE</span>
+                    <h4 class="blog-title">Broad bean and goats' cheese bruschetta</h4>
+                    <div class="blog-meta">
+                        <span>May 21, 2021</span>
+                        <span class="dot-separator">•</span>
+                        <span>2 Comments</span>
+                        <span class="dot-separator">•</span>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?q=80&w=600&auto=format&fit=crop"
+                        alt="Banana Smoothie">
+                    <div class="img-overlay">
+                        <div class="overlay-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">SMOOTHIE</span>
+                    <h4 class="blog-title">Broad bean and goats' cheese bruschetta</h4>
+                    <div class="blog-meta">
+                        <span>May 21, 2021</span>
+                        <span class="dot-separator">•</span>
+                        <span>2 Comments</span>
+                        <span class="dot-separator">•</span>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Feed Section -->
+    <section class="gallery-feed">
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="images/400400-1.webp" alt="Orange slice">
+            </div>
+            <div class="gallery-item">
+                <img src="images/400400-2.webp" alt="Milkshake">
+            </div>
+            <div class="gallery-item">
+                <img src="images/400400-3.webp" alt="Pink Smoothie">
+            </div>
+            <div class="gallery-item">
+                <img src="images/400400-4.webp" alt="Drink">
+            </div>
+            <div class="gallery-item">
+                <img src="images/400400-5.webp" alt="Watermelon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-ragged-edge">
+            <svg width="0" height="0">
+                <filter id="footer-ragged">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R"
+                        yChannelSelector="G" />
+                </filter>
+            </svg>
+            <div class="footer-ragged-shape"></div>
+        </div>
+
+        <div class="footer-bg">
+            <i class="fas fa-leaf footer-leaf-1"></i>
+            <i class="fas fa-lemon footer-lemon-1"></i>
+            <i class="fas fa-seedling footer-seedling-1"></i>
+            <i class="fas fa-apple-whole footer-apple-1"></i>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p class="footer-text">6Fifth Avenue 5501, Broadway, New York<br>Morris Street London 1234</p>
+                    <div class="footer-contact-item">
+                        <i class="far fa-paper-plane"></i>
+                        <span>Your mail @ gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(123) 4567 89000</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Useful Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Terms Of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Follow Us Now</h4>
+                    <ul class="footer-links social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> instagram</a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i> dribbble</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Subscribe</h4>
+                    <form class="footer-subscribe">
+                        <div class="input-wrapper">
+                            <input type="email" placeholder="Your Email" required>
+                            <span class="input-icon">...</span>
+                        </div>
+                        <button type="submit" class="subscribe-btn">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 foodily All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        let slideInterval;
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("testimonial-slide");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+
+            if (slides[slideIndex - 1]) {
+                slides[slideIndex - 1].classList.add("active");
+                if (dots[slideIndex - 1]) dots[slideIndex - 1].classList.add("active");
+            }
+        }
+
+        function currentSlide(n) {
+            clearInterval(slideInterval);
+            showSlides(slideIndex = n);
+            startSlideShow();
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(function () {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 5000);
+        }
+
+        // Initialize slider
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlides(slideIndex);
+            startSlideShow();
+        });
+    </script>
+</body>
+
+</html>
