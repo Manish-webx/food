@@ -26,15 +26,19 @@
             <span></span>
         </button>
         <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Events</a>
-            <a href="#">About</a>
+            <a href="#home"
+                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Home</a>
+            <a href="#menu"
+                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Menu</a>
+            <a href="#events"
+                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Events</a>
+            <a href="#about"
+                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">About</a>
         </nav>
         <button class="nav-contact-btn">Contact</button>
     </header>
 
-    <main class="hero">
+    <main class="hero" id="home">
         <div class="content-left">
             <h1 class="main-title">Hydration<br>made simple.</h1>
             <p class="subtitle">Fresh beverages crafted with real ingredients,<br>Unprocessed sugar and everyday
@@ -101,7 +105,7 @@
     </section>
 
     <!-- Beverage Section -->
-    <section class="beverage-section">
+    <section class="beverage-section" id="menu">
         <div class="beverage-header">
             <h3 class="beverage-subtitle">Best For You</h3>
             <h2 class="beverage-title">Our Beverage</h2>
@@ -163,7 +167,7 @@
     </section>
 
     <!-- Our Story Section -->
-    <section id="our-story" class="story-section">
+    <section id="about" class="story-section">
         <div class="story-container">
             <h2 class="story-title">Our Story</h2>
             <p class="story-subtitle">Hydration shouldn't be an afterthought.</p>
@@ -256,7 +260,7 @@
         </div>
     </section>
     <!-- Blog Section -->
-    <section class="blog-section">
+    <section class="blog-section" id="events">
         <div class="blog-pattern">
             <div class="floating-sketches">
                 <i class="fas fa-apple-whole"></i>
@@ -282,8 +286,6 @@
                     <line x1="58" y1="14" x2="80" y2="14" stroke="#b7b89d" stroke-width="1" />
                 </svg>
             </div>
-            <p class="blog-description">Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus
-                magna,<br>vel scelerisque nisl consectetur et.</p>
         </div>
 
         <div class="blog-grid">
@@ -300,7 +302,7 @@
                     <span class="blog-tag">HYDRATION</span>
                     <h4 class="blog-title">What Does Good Hydration Really Look Like?</h4>
                     <div class="blog-meta" style="justify-content: space-between;">
-                        <span>May 21, 2021</span>
+                        <span>July 21, 2026</span>
                         <a href="#" class="read-more-link">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -319,7 +321,7 @@
                     <span class="blog-tag">PROCESS</span>
                     <h4 class="blog-title">From Real Fruit to Your Glass: How Nere Makes Beverages</h4>
                     <div class="blog-meta" style="justify-content: space-between;">
-                        <span>May 21, 2021</span>
+                        <span>June 21, 2026</span>
                         <a href="#" class="read-more-link">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -338,7 +340,7 @@
                     <span class="blog-tag">WELLNESS</span>
                     <h4 class="blog-title">Beyond Plain Water: Simple Ways to Stay Hydrated Every Day</h4>
                     <div class="blog-meta" style="justify-content: space-between;">
-                        <span>May 21, 2021</span>
+                        <span>May 21, 2026</span>
                         <a href="#" class="read-more-link">Read more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -634,7 +636,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Nere All Rights Reserved.</p>
+                <p>&copy; 2026 Nere All Rights Reserved.</p>
             </div>
         </div>
     </footer>

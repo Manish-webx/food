@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 html,
 body {
     width: 100%;
@@ -45,11 +50,11 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2% 1rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 1000;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
