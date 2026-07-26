@@ -1767,3 +1767,44 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* Story Section */
+.story-section {
+    background-color: #f7f7f7;
+    padding: 8rem 5%;
+    text-align: center;
+    color: #333333;
+}
+
+.story-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-title {
+    font-family: 'Caveat', cursive;
+    font-size: 4.5rem;
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+
+.story-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #2c302e;
+}
+
+.story-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555555;
+}
+
+.story-footer {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: var(--bg-color);
+    margin-top: 4rem;
+}
