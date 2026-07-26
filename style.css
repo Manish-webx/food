@@ -544,8 +544,8 @@ main {
 
 /* Beverage Section */
 .beverage-section {
-    background-color: #fbfbfb;
-    padding: 6rem 5%;
+    background-color: #ffffff;
+    padding: 4rem 5%;
     text-align: center;
 }
 
@@ -578,7 +578,7 @@ main {
 
 .beverage-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 4rem;
     padding: 0 5%;
@@ -625,11 +625,7 @@ main {
     justify-content: center;
 }
 
-@media (max-width: 1200px) {
-    .beverage-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+
 
 @media (max-width: 991px) {
     .beverage-grid {
@@ -1180,8 +1176,8 @@ main {
 
 /* Testimonial Section */
 .testimonial-section {
-    background-color: #fbfbfb;
-    padding: 6rem 5% 8rem;
+    background-color: #ffffff;
+    padding: 4rem 5%;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -1300,8 +1296,8 @@ main {
 
 /* Blog Section */
 .blog-section {
-    background-color: #ffffff;
-    padding: 8rem 5%;
+    background-color: #fbfbfb;
+    padding: 4rem 5%;
     position: relative;
     overflow: hidden;
 }
@@ -1355,14 +1351,17 @@ main {
 }
 
 .blog-card {
-    background-color: #fbfbfb;
-    border-radius: 0;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #f2f2f2;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
 }
 
 .blog-card:hover {
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-8px);
 }
 
 .blog-img-wrapper {
@@ -1425,42 +1424,64 @@ main {
 
 .blog-tag {
     display: inline-block;
-    background-color: #023118;
-    color: #ffffff;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 0.35rem 1rem;
-    border-radius: 20px;
-    margin-bottom: 1.2rem;
-    letter-spacing: 1px;
+    background-color: rgba(183, 184, 157, 0.2);
+    color: #023118;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .blog-title {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    color: #333333;
-    line-height: 1.4;
-    margin-bottom: 1.2rem;
+    color: #222222;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
     transition: color 0.3s ease;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .blog-card:hover .blog-title {
-    color: #9eb84d;
+    color: #b7b89d;
 }
 
 .blog-meta {
-    font-size: 0.8rem;
-    color: #999999;
+    font-size: 0.85rem;
+    color: #777777;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 1.5rem;
+}
+
+.read-more-link {
+    color: #023118;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     transition: color 0.3s ease;
 }
 
-.blog-card:hover .blog-meta {
-    color: #9eb84d;
+.read-more-link:hover {
+    color: #b7b89d;
+}
+
+.read-more-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more-link:hover i {
+    transform: translateX(4px);
 }
 
 .dot-separator {
@@ -1478,6 +1499,89 @@ main {
 
 @media (max-width: 600px) {
     .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Why Nere Section */
+.why-nere-section {
+    padding: 4rem 5%;
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+.why-nere-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-nere-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.why-nere-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.why-card {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f2f2f2;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(183, 184, 157, 0.15);
+    color: #023118;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+.why-card:hover .why-icon {
+    background-color: #023118;
+    color: #ffffff;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.why-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 1rem;
+}
+
+.why-text {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+    .why-nere-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .why-nere-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -1771,7 +1875,7 @@ main {
 /* Story Section */
 .story-section {
     background-color: #f7f7f7;
-    padding: 8rem 5%;
+    padding: 4rem 5%;
     text-align: center;
     color: #333333;
 }
@@ -1807,4 +1911,136 @@ main {
     font-size: 3rem;
     color: var(--bg-color);
     margin-top: 4rem;
+}
+
+/* --- Mobile Responsiveness Enhancements --- */
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 19px;
+    position: relative;
+    z-index: 101;
+    padding: 0;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #023118;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    transition: transform 0.35s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.mobile-menu-btn span:nth-child(1) {
+    top: 0;
+}
+
+.mobile-menu-btn span:nth-child(2) {
+    top: 8px;
+}
+
+.mobile-menu-btn span:nth-child(3) {
+    top: 16px;
+}
+
+.mobile-menu-btn:hover span {
+    background-color: #b7b89d;
+}
+
+.mobile-menu-btn.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-btn.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.mobile-menu-btn.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 991px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-contact-btn {
+        display: none; /* Hide on mobile to save space */
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        left: auto;
+        transform: none;
+        width: 300px;
+        max-width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        padding: 6rem 2rem 2rem;
+        z-index: 100;
+        align-items: flex-start;
+        gap: 2rem;
+        transition: right 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .main-title {
+        font-size: 3.8rem !important;
+        line-height: 1.1;
+    }
+
+    .beverage-title, .story-title, .juices-title, .upcoming-title {
+        font-size: 2.8rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .beverage-section, .testimonial-section, .blog-section, .why-nere-section, .story-section {
+        padding: 3rem 5% !important;
+    }
+    
+    .hero {
+        padding-top: 6rem;
+    }
+
+    .main-title {
+        font-size: 3rem !important;
+    }
+
+    .beverage-title, .story-title, .juices-title, .upcoming-title {
+        font-size: 2.2rem !important;
+    }
+    
+    .deals-title {
+        font-size: 1.8rem !important;
+    }
+    
+    .footer-section, .site-footer {
+        padding: 4rem 5% 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .footer-contact-item {
+        word-break: break-all;
+    }
 }
