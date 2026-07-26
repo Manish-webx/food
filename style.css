@@ -1,8 +1,8 @@
 :root {
-    --bg-color: #b7b89d;
+    --bg-color: #023118;
     --text-color: #ffffff;
-    --btn-bg: #e2908f;
-    --btn-hover: #d17877;
+    --btn-bg: #023118;
+    --btn-hover: #023118;
     --nav-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -12,15 +12,31 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    overflow-x: hidden;
     min-height: 100vh;
     position: relative;
     /* Add a subtle gradient overlay to match lighting if needed */
     background: radial-gradient(circle at 60% 40%, #c4c5a9 0%, #b7b89d 100%);
+}
+
+section,
+header,
+footer,
+main {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Navbar */
@@ -28,9 +44,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 5% 1rem;
-    position: relative;
+    padding: 1rem 2% 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 20;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -54,24 +78,46 @@ body {
 .nav-links {
     display: flex;
     gap: 2.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links a {
-    color: var(--nav-color);
+    color: var(--bg-color);
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
+    color: var(--btn-bg);
+}
+
+.nav-contact-btn {
+    background-color: var(--btn-bg);
     color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.nav-contact-btn:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-icons {
     display: flex;
     gap: 1.5rem;
-    color: #ffffff;
+    color: var(--bg-color);
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -82,12 +128,16 @@ body {
     padding: 1rem 5% 5rem;
     position: relative;
     min-height: calc(100vh - 120px);
+    background-image: url('images/hero-section.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content-left {
     flex: 0 0 45%;
     z-index: 10;
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-left: 5%;
 }
 
@@ -151,6 +201,7 @@ body {
 
 .outline-btn:hover {
     background-color: rgba(226, 144, 143, 0.1);
+    color: #023118;
     box-shadow: 0 5px 15px rgba(226, 144, 143, 0.2);
 }
 
@@ -404,7 +455,7 @@ body {
 
 .juices-subtitle {
     font-family: 'Caveat', cursive;
-    color: #b7b89d;
+    color: #023118;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: -5px;
@@ -438,7 +489,7 @@ body {
 .outline-btn {
     background-color: transparent;
     color: #333333;
-    border: 1px solid #e2908f;
+    border: 1px solid #023118;
     box-shadow: none;
     padding-left: 0.4rem;
 }
@@ -446,11 +497,12 @@ body {
 .outline-btn:hover {
     background-color: #fff5f5;
     transform: translateY(-2px);
+    color: #023118 !important;
     box-shadow: 0 4px 15px rgba(226, 144, 143, 0.15);
 }
 
 .outline-btn .btn-icon {
-    background-color: #e2908f;
+    background-color: #023118;
 }
 
 .sketch-overlay {
@@ -506,7 +558,7 @@ body {
 
 .beverage-subtitle {
     font-family: 'Caveat', cursive;
-    color: #b7b89d;
+    color: #023118;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: -5px;
@@ -560,7 +612,7 @@ body {
 }
 
 .beverage-card.highlight-text h4 {
-    color: #e2908f;
+    color: #023118;
 }
 
 .beverage-card p {
@@ -622,7 +674,7 @@ body {
 
 .deals-circle {
     position: relative;
-    background-color: rgba(183, 184, 157, 0.95);
+    background-color: rgba(2, 49, 24, 0.95);
     width: 550px;
     height: 550px;
     border-radius: 50%;
@@ -715,7 +767,7 @@ body {
 
 .deals-form button {
     background-color: #ffffff;
-    color: #b7b89d;
+    color: #023118;
     border: none;
     width: 40px;
     height: 40px;
@@ -889,7 +941,7 @@ body {
     width: 60px;
     height: 60px;
     min-width: 60px;
-    background-color: #f1811a;
+    background-color: #023118;
     /* Orange color */
     color: #ffffff;
     border-radius: 50%;
@@ -1016,7 +1068,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #110906; /* Dark background to match image edges if needed */
+    background-color: #F7E373;
+    /* Dark background to match image edges if needed */
 }
 
 .upcoming-right-img {
@@ -1197,7 +1250,7 @@ body {
     height: 8px;
     width: 24px;
     margin: 0 4px;
-    background-color: rgba(183, 184, 157, 0.4);
+    background-color: rgba(2, 49, 24, 0.4);
     border-radius: 4px;
     display: inline-block;
     transition: background-color 0.3s ease, width 0.3s ease;
@@ -1205,7 +1258,7 @@ body {
 
 .slider-dots .dot.active,
 .slider-dots .dot:hover {
-    background-color: #b7b89d;
+    background-color: #023118;
     width: 32px;
 }
 
@@ -1241,7 +1294,7 @@ body {
 }
 
 .testimonial-author span {
-    color: #b7b89d;
+    color: #023118;
     font-weight: 600;
 }
 
@@ -1335,7 +1388,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(183, 184, 157, 0.4);
+    background-color: rgba(2, 49, 24, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1372,7 +1425,7 @@ body {
 
 .blog-tag {
     display: inline-block;
-    background-color: #9eb84d;
+    background-color: #023118;
     color: #ffffff;
     font-size: 0.7rem;
     font-weight: 600;
@@ -1479,9 +1532,13 @@ body {
 /* Footer Section */
 .site-footer {
     background-color: #0a0a0a;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.3)), url('images/footer-bg.webp');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
     color: #e0e0e0;
     position: relative;
-    padding: 8rem 5% 3rem;
+    padding: 5rem 2% 2rem;
     overflow: hidden;
 }
 
@@ -1542,7 +1599,7 @@ body {
     left: 0;
     width: 25px;
     height: 1px;
-    background-color: #b7b89d;
+    background-color: #023118;
 }
 
 .footer-text {
@@ -1583,7 +1640,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #b7b89d;
+    color: #023118;
     padding-left: 5px;
 }
 
@@ -1616,7 +1673,7 @@ body {
 }
 
 .footer-subscribe input:focus {
-    border-color: #b7b89d;
+    border-color: #023118;
 }
 
 .input-icon {
@@ -1634,7 +1691,7 @@ body {
 
 .subscribe-btn {
     width: 100%;
-    background-color: #b7b89d;
+    background-color: #023118;
     color: #ffffff;
     border: none;
     padding: 1rem;
@@ -1663,7 +1720,7 @@ body {
     position: absolute;
     top: 30%;
     left: 10%;
-    color: #b7b89d;
+    color: #023118;
     opacity: 0.05;
     font-size: 5rem;
     transform: rotate(45deg);
@@ -1673,7 +1730,7 @@ body {
     position: absolute;
     bottom: 20%;
     right: 15%;
-    color: #b7b89d;
+    color: #023118;
     opacity: 0.05;
     font-size: 6rem;
     transform: rotate(-20deg);
@@ -1683,7 +1740,7 @@ body {
     position: absolute;
     top: 15%;
     right: 25%;
-    color: #b7b89d;
+    color: #023118;
     opacity: 0.05;
     font-size: 3.5rem;
     transform: rotate(15deg);
@@ -1693,7 +1750,7 @@ body {
     position: absolute;
     bottom: 15%;
     left: 20%;
-    color: #b7b89d;
+    color: #023118;
     opacity: 0.05;
     font-size: 4rem;
     transform: rotate(-15deg);
