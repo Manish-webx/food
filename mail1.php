@@ -31,7 +31,7 @@ try {
     $mail->Port = 465;
     // Email Settings
     $mail->setFrom('contact@retrofusion.in', $_POST['name']);
-    $mail->addAddress('vestafoodsandbeverages@gmail.com', $_POST['name']); // Add a recipient
+    $mail->addAddress('manishkushwahaf7@gmail.com', $_POST['name']); // Add a recipient
     $mail->Subject = 'New Lead Nere Website';
     $mail->MsgHTML($body);
     $mail->IsHTML(true);
