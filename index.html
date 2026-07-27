@@ -26,35 +26,42 @@
             <span></span>
         </button>
         <nav class="nav-links">
-            <a href="#home"
-                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Home</a>
             <a href="#menu"
                 onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Menu</a>
             <a href="#events"
                 onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Events</a>
+            <a href="#blog"
+                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Blog</a>
             <a href="#about"
                 onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">About</a>
+            <a href="#contact" class="mobile-contact-link"
+                onclick="document.querySelector('.nav-links').classList.remove('active'); document.querySelector('.mobile-menu-btn').classList.remove('open');">Contact
+                Us</a>
         </nav>
-        <button class="nav-contact-btn">Contact</button>
+        <a href="#contact" class="nav-contact-btn" style="text-decoration: none;">Contact Us</a>
     </header>
 
     <main class="hero" id="home">
         <div class="content-left">
-            <h1 class="main-title">Hydration<br>made simple.</h1>
-            <p class="subtitle">Fresh beverages crafted with real ingredients,<br>Unprocessed sugar and everyday
+            <h1 class="main-title" style="color: #023118">Hydration<br>made simple.</h1>
+            <p class="subtitle" style="color:black">Fresh beverages crafted with real ingredients,<br>Unprocessed sugar
+                and everyday
                 wellness in mind.</p>
             <div class="hero-buttons" style="display: flex; gap: 1rem;">
-                <button class="buy-now-btn" style="padding: 0.8rem 2rem;">
+                <a href="#contact" class="buy-now-btn"
+                    style="text-decoration: none; padding: 0.8rem 2rem; justify-content: center;">
                     Book us Now
-                </button>
-                <button class="buy-now-btn outline-btn"
-                    style="padding: 0.8rem 2rem; color: #ffffff; border-color: #ffffff;">
+                </a>
+                <a href="#about" class="buy-now-btn outline-btn"
+                    style="text-decoration: none; padding: 0.8rem 2rem; justify-content: center;">
                     Our Story
-                </button>
+                </a>
             </div>
         </div>
 
-
+        <div class="content-right">
+            <img src="images/hero-left-img.webp" alt="Hero Image" class="hero-img">
+        </div>
     </main>
 
 
@@ -130,25 +137,26 @@
                 <h4>Electrolytes</h4>
                 <p>Lemonades that heal</p>
             </div>
-            <div class="beverage-card highlight-text">
-                <img src="images/Nere_Veganmilk_almondsleekbottle.webp" alt="Vegan Milk">
-                <h4>Vegan Milk</h4>
-                <p>Small batches only</p>
-            </div>
             <div class="beverage-card">
                 <img src="images/Nere_coldpressed_orangejuicesleekbottle.webp" alt="Cold Pressed Juices">
                 <h4>Cold Pressed Juices</h4>
                 <p>Small batches only</p>
             </div>
+            <div class="beverage-card highlight-text">
+                <img src="images/Nere_Veganmilk_almondsleekbottle.webp" alt="Vegan Milk">
+                <h4>Vegan Milk</h4>
+                <p>Small batches only</p>
+            </div>
+
+            <div class="beverage-card">
+                <img src="images/mocktail.webp" alt="Mocktails & Coolers">
+                <h4>Mocktails & Coolers</h4>
+                <p>Without artificial colors and flavors</p>
+            </div>
             <div class="beverage-card">
                 <img src="images/Nere_Smoothies_Tropical.webp" alt="Smoothies & Shakes">
                 <h4>Smoothies & Shakes</h4>
                 <p>Fresh Fruits everyday</p>
-            </div>
-            <div class="beverage-card">
-                <img src="images/mocktail.webp" alt="Mocktails & Coolers">
-                <h4>Mocktails & Coolers</h4>
-                <p>"Without artificial colors and flavors"</p>
             </div>
         </div>
 
@@ -168,18 +176,30 @@
 
     <!-- Our Story Section -->
     <section id="about" class="story-section">
-        <div class="story-container">
-            <h2 class="story-title">Our Story</h2>
-            <p class="story-subtitle">Hydration shouldn't be an afterthought.</p>
+        <div class="story-top-row">
+            <div class="story-content-left">
+                <div class="story-container">
+                    <h2 class="story-title">Our Story</h2>
+                    <p class="story-subtitle">Hydration shouldn't be an afterthought.</p>
 
-            <p class="story-text">Somewhere along the way, drinks became louder than the moments they were meant for.
-                More sugar. More flavours. More ingredients we couldn't pronounce.</p>
+                    <p class="story-text">Somewhere along the way, drinks became louder than the moments they were meant
+                        for.
+                        More sugar. More flavours. More ingredients we couldn't pronounce.</p>
 
-            <p class="story-text">We wanted to go in the opposite direction.</p>
+                    <p class="story-text">We wanted to go in the opposite direction.</p>
 
-            <p class="story-text">Nere was created with a simple belief: good hydration doesn't need to be complicated.
+
+                </div>
+            </div>
+            <div class="story-image-right">
+                <img src="images/hero-section.webp" alt="Our Story" class="story-img">
+            </div>
+        </div>
+
+        <div class="story-bottom-full">
+            <p class="story-text">Nere was created with a simple belief: good hydration doesn't need to be
+                complicated.
             </p>
-
             <p class="story-text">We believe everyday beverages should begin with real ingredients, balanced sweetness,
                 and flavours people already love, like they've always belonged on our tables.</p>
 
@@ -192,6 +212,67 @@
                 one recipe, and one morning at a time.</p>
 
             <h3 class="story-footer">Join us for a sip at Nere.</h3>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="blog-section" id="events">
+        <div class="blog-header">
+            <h3 class="beverage-subtitle">Join Us</h3>
+            <h2 class="beverage-title">Events</h2>
+            <div class="separator center-separator">
+                <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 2 Q45 8 40 14 Q35 8 40 2 Z" fill="#b7b89d" />
+                    <path d="M33 9 Q30 7 28 10 Q31 12 33 9 Z" fill="#b7b89d" />
+                    <path d="M47 9 Q50 7 52 10 Q49 12 47 9 Z" fill="#b7b89d" />
+                    <line x1="0" y1="14" x2="22" y2="14" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="58" y1="14" x2="80" y2="14" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="images/corporate-events.webp" alt="Event 1">
+                    <div class="img-overlay">
+                        <div class="overlay-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <h4 class="blog-title">Corporate events</h4>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="images/Private-Events.webp" alt="Event 2">
+                    <div class="img-overlay">
+                        <div class="overlay-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <h4 class="blog-title">Private Events</h4>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="images/sport-events.webp" alt="Event 3">
+                    <div class="img-overlay">
+                        <div class="overlay-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <h4 class="blog-title">Sports Events</h4>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -222,45 +303,55 @@
         <div class="testimonial-slider">
             <div class="testimonial-slide active">
                 <div class="testimonial-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=60"
-                        alt="Meredith Grant" class="testimonial-img">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=60"
+                        alt="Anirudh Jha" class="testimonial-img">
                 </div>
-                <p class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco."</p>
-                <p class="testimonial-author"><span>Meredith Grant</span> - Host Mother</p>
+                <p class="testimonial-quote">"I wasn't expecting a fresh beverage to taste this clean. You can actually
+                    taste the fruit instead of artificial syrup. It's refreshing without feeling too sweet."</p>
+                <p class="testimonial-author"><span>Anirudh Jha</span></p>
             </div>
 
             <div class="testimonial-slide">
                 <div class="testimonial-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=60"
-                        alt="John Doe" class="testimonial-img">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=60"
+                        alt="Kaviya Sharma" class="testimonial-img">
                 </div>
-                <p class="testimonial-quote">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia."</p>
-                <p class="testimonial-author"><span>John Doe</span> - Happy Customer</p>
+                <p class="testimonial-quote">"Finally, a drink that feels premium without being complicated. The
+                    ingredients taste fresh, and it's become my go-to whenever I am around this market"</p>
+                <p class="testimonial-author"><span>Kaviya Sharma</span></p>
             </div>
 
             <div class="testimonial-slide">
                 <div class="testimonial-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=60"
-                        alt="Jane Smith" class="testimonial-img">
+                        alt="Pema Tamang" class="testimonial-img">
                 </div>
-                <p class="testimonial-quote">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
-                <p class="testimonial-author"><span>Jane Smith</span> - Regular Guest</p>
+                <p class="testimonial-quote">"The Orange Fizz was a pleasant surprise. It felt light, refreshing, and
+                    looked just as good as it tasted. I'd definitely buy again."</p>
+                <p class="testimonial-author"><span>Pema Tamang</span></p>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="testimonial-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=60"
+                        alt="Suresh Kaul" class="testimonial-img">
+                </div>
+                <p class="testimonial-quote">"Most drinks either taste overly sugary or too artificial. Nere strikes a
+                    nice balance real fruit flavour, refreshing, and something I'd happily recommend to people around
+                    me."</p>
+                <p class="testimonial-author"><span>Suresh Kaul</span></p>
             </div>
 
             <div class="slider-dots">
                 <span class="dot active" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
     </section>
     <!-- Blog Section -->
-    <section class="blog-section" id="events">
+    <section class="blog-section" id="blog">
         <div class="blog-pattern">
             <div class="floating-sketches">
                 <i class="fas fa-apple-whole"></i>
@@ -275,7 +366,7 @@
         </div>
 
         <div class="blog-header">
-            <h3 class="beverage-subtitle">Events & Blog</h3>
+            <h3 class="beverage-subtitle">Blog</h3>
             <h2 class="beverage-title">Our Blog</h2>
             <div class="separator center-separator">
                 <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -588,6 +679,43 @@
         </div>
     </section>
 
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-header">
+            <h3 class="beverage-subtitle">Get In Touch</h3>
+            <h2 class="beverage-title">Contact Us</h2>
+            <div class="separator center-separator">
+                <svg width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 2 Q45 8 40 14 Q35 8 40 2 Z" fill="#b7b89d" />
+                    <path d="M33 9 Q30 7 28 10 Q31 12 33 9 Z" fill="#b7b89d" />
+                    <path d="M47 9 Q50 7 52 10 Q49 12 47 9 Z" fill="#b7b89d" />
+                    <line x1="0" y1="14" x2="22" y2="14" stroke="#b7b89d" stroke-width="1" />
+                    <line x1="58" y1="14" x2="80" y2="14" stroke="#b7b89d" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="buy-now-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="site-footer">
         <div class="footer-ragged-edge">
@@ -620,17 +748,22 @@
                         NCR</p>
                 </div>
 
-                <div class="footer-col" style="display: flex; flex-direction: column; justify-content: center;">
-                    <div class="footer-contact-item"
-                        style="justify-content: center; font-size: 1.1rem; margin-bottom: 1.5rem;">
-                        <i class="fab fa-instagram" style="color: #b7b89d; font-size: 1.5rem; margin-right: 10px;"></i>
-                        <a href="https://www.instagram.com/drink.nere_/"
-                            style="color: #e0e0e0; text-decoration: none;">drink.nere_</a>
-                    </div>
-                    <div class="footer-contact-item" style="justify-content: center; font-size: 1.1rem;">
-                        <i class="far fa-envelope" style="color: #b7b89d; font-size: 1.5rem; margin-right: 10px;"></i>
-                        <a href="mailto:vestafoodsandbeverages@gmail.com"
-                            style="color: #e0e0e0; text-decoration: none;">vestafoodsandbeverages@gmail.com</a>
+                <div class="footer-col"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <div class="footer-contact-item"
+                            style="display: flex; align-items: center; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                            <i class="fab fa-instagram"
+                                style="color: #b7b89d; font-size: 1.5rem; margin-right: 10px; width: 24px; text-align: center;"></i>
+                            <a href="https://www.instagram.com/drink.nere_/"
+                                style="color: #e0e0e0; text-decoration: none;">drink.nere_</a>
+                        </div>
+                        <div class="footer-contact-item" style="display: flex; align-items: center; font-size: 1.1rem;">
+                            <i class="far fa-envelope"
+                                style="color: #b7b89d; font-size: 1.5rem; margin-right: 10px; width: 24px; text-align: center;"></i>
+                            <a href="mailto:vestafoodsandbeverages@gmail.com"
+                                style="color: #e0e0e0; text-decoration: none;">vestafoodsandbeverages@gmail.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
